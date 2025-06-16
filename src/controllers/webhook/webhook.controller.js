@@ -64,6 +64,7 @@ const receiveDisputesWebhook = async (req, res) => {
             throw new AppError(statusCodes.BAD_REQUEST, 'Unsupported Gateway Payload :' + Gateway);
         }
 
+        // Verification
         // Step 6  : Normalize the Gateway Payload  ==> Adaptor Layer is Added
 
         // 6.1 : Payload structure
